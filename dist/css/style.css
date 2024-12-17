@@ -818,6 +818,10 @@ select{
   padding-top: 0.75rem !important;
   padding-bottom: 0.75rem !important;
 }
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -837,10 +841,6 @@ select{
 .py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .pb-12{
   padding-bottom: 3rem;
@@ -1314,6 +1314,10 @@ body {
     padding-top: 0.75rem !important;
     padding-bottom: 0.75rem !important;
   }
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .md\:px-14{
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -1325,10 +1329,6 @@ body {
   .md\:py-8{
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-  .md\:px-0{
-    padding-left: 0px;
-    padding-right: 0px;
   }
   .md\:pb-2{
     padding-bottom: 0.5rem;
