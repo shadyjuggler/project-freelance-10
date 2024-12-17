@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Gulp with TailwindCSS v3</title>
+	<link href="https://db.onlinewebfonts.com/c/12ff62164c9778917bddb93c6379cf47?family=Aeonik+Pro+Regular"
+		rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+	<main>
+		<header class="bg-main overflow-hidden">
+    <div class="container">
+        <div class="relative">
+            <nav class="relative z-50 py-8 flex justify-between items-center">
+    <div class="basis-1/2 lg:basis-1/4">
+        <img src="./img/logo.svg" alt="logo">
+    </div>
+    <div id="dd-menu" class="absolute hidden z-30 shadow-md shadow-gray-500 lg:shadow-none  lg:!flex items-start flex-col lg:flex-row p-6 lg:p-0 w-full rounded-md right-0 top-full bg-white lg:bg-transparent lg:static basis-2/3 lg:basis-3/4 justify-between lg:items-center">
+        <div>
+            <ul class="text-sm flex-col lg:flex-row flex gap-4 lg:gap-6">
+                <li>
+                    <a class="purple lg:!text-white link" href="">О приложении</a>
+                </li>
+                <li>
+                    <a class="purple lg:!text-white link" href="">Преимущества</a>
+                </li>
+                <li>
+                    <a class="purple lg:!text-white link" href="">
+                        Как работает
+                    </a>
+                </li>
+                <li>
+                    <a class="purple lg:!text-white link" href="">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex mt-4 lg:mt-0 gap-4 lg:gap-6">
+            <a href="#" class="btn btn-blank">
+                <p>Войти</p>
+            </a>
+            <a href="#" class="btn btn-white">
+                <p>Регистрация</p>
+            </a>
+        </div>
+    </div>
+    <button onclick="document.getElementById('dd-menu').classList.toggle('hidden')" class="lg:hidden w-8">
+        <img src="./img/burger.svg" alt="burger">
+    </button>
+</nav>
+
+            <div class="relative z-20 mt-8 sm:mt-16 flex flex-col items-center">
+                <h1 style="max-width: 820px;" class="text-center font-bold text-3xl sm:text-4xl md:text-5xl">Повышайте прибыльность вашего бизнеса на маркетплейсах!</h1>
+                <p class="text-center mt-4 text-base md:text-lg">Анализируйте показатели, считайте прибыль, улучшайте бизнес.</p>
+                <a href="#" class="mt-4 !py-2 md:!py-3 btn btn-white gap-2 items-center">
+                    <p>Попробовать бесплатно</p>
+                     <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect id="arrow 1" rx="0.000000" width="19.000000" height="19.000000"
+                        transform="translate(0.500000 20.500000) rotate(-90.000000)" fill="#FFFFFF" fill-opacity="0" />
+                    <g clip-path="url(#clip136_4351)">
+                        <path id="Vector"
+                            d="M7.73 14.78C7.59 14.64 7.51 14.44 7.51 14.25C7.51 14.05 7.59 13.86 7.73 13.72L11.45 10L7.73 6.28C7.66 6.21 7.6 6.12 7.56 6.03C7.52 5.94 7.5 5.84 7.5 5.74C7.49 5.64 7.51 5.54 7.55 5.45C7.59 5.35 7.64 5.27 7.71 5.2C7.79 5.13 7.87 5.07 7.96 5.03C8.06 4.99 8.16 4.98 8.26 4.98C8.36 4.98 8.46 5 8.55 5.04C8.64 5.08 8.73 5.14 8.79 5.22L13.04 9.47C13.18 9.61 13.26 9.8 13.26 10C13.26 10.19 13.18 10.39 13.04 10.53L8.79 14.78C8.65 14.92 8.46 15 8.26 15C8.06 15 7.87 14.92 7.73 14.78Z"
+                            fill-opacity="1.000000" fill-rule="evenodd" />
+                    </g>
+                </svg>
+                </a>
+                <div class="mt-8">
+                    <img class="w-auto h-fit" src="./img/main.png" alt="pc">
+                </div>
+            </div>
+
+            <img  class="bottom-36 md:bottom-96 scale-50 md:scale-75 lg:scale-100 absolute -right-20 z-10" src="./img/ozon.png" alt="ozon">
+            <img  class="bottom-1 md:bottom-5 scale-50 md:scale-75 lg:scale-100 absolute -left-40 md:-left-20 z-10" src="./img/wb.png" alt="sb">
+
+
+            <img style="bottom: -0rem;" class="absolute blur-sm  z-10" src="./img/header-sh.svg" alt="shadow">
+            <img style="bottom: -5rem;" class="absolute blur-sm  z-10" src="./img/header-sh.svg" alt="shadow">
+            <img style="bottom: -10rem;" class="absolute blur-sm  z-10" src="./img/header-sh.svg" alt="shadow">
+        </div>
+    </div>
+</header>
+		<section id="functions" class="relative">
+    <div class="container">
+        <div style="border: 1px solid rgb(234, 236, 239);"
+            class="relative z-30 pt-10 px-5 flex flex-col items-center rounded-3xl -translate-y-4 sm:-translate-y-6 md:-translate-y-10 bg-white">
+            <div class="label">
+                <p>о продукте</p>
+            </div>
+            <h2 class="mt-6 h2">Функции для вашего бизнеса</h2>
+            <p style="max-width: 448px;" class="mt-6 text">Простое и ясное объяснение возможностей сервиса, которые
+                решают основные проблемы клиента.</p>
+            <div class="mt-4 md:mt-16 flex flex-col gap-4 md:gap-0 md:flex-row md:flex-wrap">
+                <div class="basis-1/2 md:pb-2 md:pr-2">
+                    <div class="relative card cursor-pointer rounded-xl py-4 md:py-8 p-5 sm:px-8 md:px-14 flex flex-col items-center">
+                        <img class="z-20" src="./img/f1.png" alt="">
+                        <p class="text-center mt-5 font-semibold text-gray-700 text-2xl">Анализ прибыли</p>
+                        <p class="mt-3 text">Сравните доходы за любые периоды, выделите наиболее прибыльные продукты и
+                            каналы.</p>
+                        <div class="card-bg"></div>
+                        <img style="top: -3rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-50" alt="triangle">
+                        <img style="top: 0rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-40" alt="triangle">
+                        <img style="top: 3rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-30" alt="triangle">
+                    </div>
+                </div>
+                <div class="basis-1/2 md:pb-2 md:pl-2">
+                    <div
+                        class="relative card cursor-pointer rounded-xl md:py-8 p-5 sm:px-8 md:px-14 flex flex-col items-center">
+                        <img class="z-20" src="./img/f2.png" alt="">
+                        <p class="text-center mt-5 font-semibold text-gray-700 text-2xl">Управление затратами</p>
+                        <p class="mt-3 text">Следите за всеми расходами, оптимизируйте затраты и планируйте бюджет.</p>
+                        <div class="card-bg"></div>
+                        <img style="top: -3rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-50" alt="triangle">
+                        <img style="top: 0rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-40" alt="triangle">
+                        <img style="top: 3rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-30" alt="triangle">
+                    </div>
+                </div>
+                <div class="basis-1/2 md:pt-2 md:pr-2">
+                    <div
+                        class="relative card cursor-pointer rounded-xl md:py-8 p-5 sm:px-8 md:px-14 flex flex-col items-center">
+                        <img class="z-20" src="./img/f3.png" alt="">
+                        <p class="text-center mt-5 font-semibold text-gray-700 text-2xl">Прогнозирование продаж</p>
+                        <p class="mt-3 text">Прогнозируйте выручку и объём продаж с учётом текущих трендов.</p>
+                        <div class="card-bg"></div>
+                        <img style="top: -3rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-50" alt="triangle">
+                        <img style="top: 0rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-40" alt="triangle">
+                        <img style="top: 3rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-30" alt="triangle">
+                    </div>
+                </div>
+                <div class="basis-1/2 md:pt-2 md:pl-2">
+                    <div
+                        class="relative card cursor-pointer rounded-xl md:py-8 p-5 sm:px-8 md:px-14 flex flex-col items-center">
+                        <img class="z-20" src="./img/f4.png" alt="">
+                        <p class="text-center mt-5 font-semibold text-gray-700 text-2xl">Краткие описания и выгоды</p>
+                        <p class="mt-3 text">Каждая функция сопровождается подзаголовком и одной-двумя строками
+                            пояснения.</p>
+                        <div class="card-bg"></div>
+                        <img style="top: -3rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-50" alt="triangle">
+                        <img style="top: 0rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-40" alt="triangle">
+                        <img style="top: 3rem;" src="./img/soft-triangle.svg" class="z-10 bg-triangle absolute opacity-30" alt="triangle">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+		<section id="promo" class="py-12">
+    <div class="container">
+        <div class="relative overflow-hidden bg-dark rounded-3xl lg:py-20 p-8 sm:p-16 md:px-4 flex justify-center items-center gap-6">
+            <div class="z-20 hidden md:block basis-1/3">
+                <img src="./img/cash.png" alt="cash">
+            </div>
+            <div class="z-20 basis-full md:max-w-md md:basis-2/3">
+                <div class="label">
+                    <p class="!text-white">СТОП АКЦИЯ</p>
+                </div>
+                <h2 style="max-width: 463px;" class="z-20 mt-8 h2 !text-left !text-white">Автоматические акции съедают вашу прибыль?</h2>
+                <p class="z-20 mt-8 text !text-left !text-white">Мы анализируем ваши акции и блокируем те, 
+                    что наносят вред вашему бизнесу. Зарабатывайте больше, а не раздавайте деньги за спасибо!</p>
+
+                <a href="" class="z-20 mt-8 btn btn-blank !py-3 !px-6 w-fit flex gap-2">
+                    <p>Попробовать бесплатно</p>
+                     <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect id="arrow 1" rx="0.000000" width="19.000000" height="19.000000"
+                        transform="translate(0.500000 20.500000) rotate(-90.000000)" fill="#FFFFFF" fill-opacity="0" />
+                    <g clip-path="url(#clip136_4351)">
+                        <path id="Vector"
+                            d="M7.73 14.78C7.59 14.64 7.51 14.44 7.51 14.25C7.51 14.05 7.59 13.86 7.73 13.72L11.45 10L7.73 6.28C7.66 6.21 7.6 6.12 7.56 6.03C7.52 5.94 7.5 5.84 7.5 5.74C7.49 5.64 7.51 5.54 7.55 5.45C7.59 5.35 7.64 5.27 7.71 5.2C7.79 5.13 7.87 5.07 7.96 5.03C8.06 4.99 8.16 4.98 8.26 4.98C8.36 4.98 8.46 5 8.55 5.04C8.64 5.08 8.73 5.14 8.79 5.22L13.04 9.47C13.18 9.61 13.26 9.8 13.26 10C13.26 10.19 13.18 10.39 13.04 10.53L8.79 14.78C8.65 14.92 8.46 15 8.26 15C8.06 15 7.87 14.92 7.73 14.78Z"
+                            fill-opacity="1.000000" fill-rule="evenodd" />
+                    </g>
+                </svg>
+                </a>
+            </div>
+            <img style="left: -22rem; top: -8rem; rotate: -2deg" src="./img/triangle.svg" class="absolute  opacity-20 z-10" alt="triangle">
+            <img style="left: -26rem; top: -6rem; rotate: -2deg" src="./img/triangle.svg" class="absolute  opacity-30 z-10" alt="triangle">
+            <img style="left: -30rem; top: -4rem; rotate: -2deg" src="./img/triangle.svg" class="absolute  opacity-40 z-10" alt="triangle">
+
+            <img style="right: -22rem; top: -8rem; transform: scaleX(-1); rotate: 2deg;" src="./img/triangle.svg" class="absolute   opacity-20 z-10" alt="triangle">
+            <img style="right: -26rem; top: -6rem; transform: scaleX(-1); rotate: 2deg;" src="./img/triangle.svg" class="absolute   opacity-30 z-10" alt="triangle">
+            <img style="right: -30rem; top: -4rem; transform: scaleX(-1); rotate: 2deg;" src="./img/triangle.svg" class="absolute   opacity-40 z-10" alt="triangle">
+        </div>
+    </div>
+</section>
+		<section id="reviews" class="py-12">
+    <div class="container">
+        <div class="flex flex-col items-center">
+            <div class="label">
+                <p>отзывы клиентов</p>
+            </div>
+            <h2 class="mt-6 h2">Что говорят наши клиенты</h2>
+            <p class="text mt-6 max-w-md">Каждый день мы делаем бизнес наших клиентов более эффективным. Их успехи —
+                наша лучшая награда!</p>
+
+            <div class="mt-8 sm:mt-20 flex flex-wrap xl:px-4 gap-4 xl:gap-6 justify-between">
+                <div class="flex gap-4 py-4 sm:p-4 xl:p-6 flex-col items-center sm:flex-row">
+                    <div class="pink w-20 h-20 xl:w-24 xl:h-24 flex rounded-full items-center justify-center">
+                        <p class="text-4xl text-black">A</p>
+                    </div>
+                    <div class="w-5/6 flex flex-col">
+                        <p style="font-size: 17px;" class="font-semibold text-gray-700 text-center sm:text-left text-center sm:text-left">Александр В.</p>
+                        <p  class="xl:max-w-sm mt-2 text sm:!text-left">После подключения ‘Стоп Акция’ наш
+                            магазин начал зарабатывать больше. Мы сократили бесполезные скидки и увеличили чистую
+                            прибыль на 30% за первый месяц!</p>
+                        <div class="mt-2 flex gap-2 items-center justify-center sm:justify-start">
+                            <img src="./img/star.svg" alt="star">
+                            <p style="translate: 0% 2px;" class="text font-semibold">+30% к прибыли.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 py-4 sm:p-4 xl:p-6 flex-col items-center sm:flex-row">
+                    <div class="green w-20 h-20 xl:w-24 xl:h-24 rounded-full flex items-center justify-center">
+                        <p class="text-4xl text-black">E</p>
+                    </div>
+                    <div class="w-5/6 flex flex-col">
+                        <p style="font-size: 17px;" class="font-semibold text-gray-700 text-center sm:text-left">Екатерина П.</p>
+                        <p  class="xl:max-w-sm mt-2 text sm:!text-left">“Я думала, что акции — это всегда хорошо. Но ‘Стоп Акция’ помогла понять, как правильно их запускать. Мы сохранили более 200 000 рублей за квартал!”</p>
+                        <div class="mt-2 flex gap-2 items-center justify-center sm:justify-start">
+                            <img src="./img/star.svg" alt="star">
+                            <p style="translate: 0% 2px;" class="text font-semibold">Экономия: 200 000 рублей.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 py-4 sm:p-4 xl:p-6 flex-col items-center sm:flex-row">
+                    <div class="blue w-20 h-20 xl:w-24 xl:h-24 rounded-full flex items-center justify-center">
+                        <p class="text-4xl">O</p>
+                    </div>
+                    <div class="w-5/6 flex flex-col">
+                        <p style="font-size: 17px;" class="font-semibold text-gray-700 text-center sm:text-left">Олег С.</p>
+                        <p  class="xl:max-w-sm mt-2 text sm:!text-left">“С помощью вашего сервиса я понял, что скидки работали в минус. Теперь акции действительно приносят прибыль, а не убытки.”</p>
+                        <div class="mt-2 flex gap-2 items-center justify-center sm:justify-start">
+                            <img src="./img/star.svg" alt="star">
+                            <p style="translate: 0% 2px;" class="text font-semibold">Повышение ROI на 15%.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-4 py-4 sm:p-4 xl:p-6 flex-col items-center sm:flex-row">
+                    <div class="yellow w-20 h-20 xl:w-24 xl:h-24 rounded-full flex items-center justify-center">
+                        <p class="text-4xl text-black">M</p>
+                    </div>
+                    <div class="w-5/6 flex flex-col">
+                        <p style="font-size: 17px;" class="font-semibold text-gray-700 text-center sm:text-left">Мария К.</p>
+                        <p  class="xl:max-w-sm mt-2 text sm:!text-left">После подключения ‘Стоп Акция’ наш магазин начал зарабатывать больше. Мы сократили бесполезные скидки и увеличили чистую прибыль на 30% за первый месяц!</p>
+                        <div class="mt-2 flex gap-2 items-center justify-center sm:justify-start">
+                            <img src="./img/star.svg" alt="star">
+                            <p style="translate: 0% 2px;" class="text font-semibold">+30% к прибыли.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+		<section id="personal" class="pb-12">
+    <div class="container">
+        <div class="relative overflow-hidden py-28 bg-main flex items-center flex flex-col rounded-3xl">
+            <h2 style="max-width: 640px;" class="h2 z-20 !text-white">Начните экономить и зарабатывать больше уже сегодня!</h2>
+            <p style="max-width: 480px;" class="z-20 mt-8 text !text-white">Подключите ‘Стоп Акция’ бесплатно и забудьте о бесполезных скидках, которые
+                съедают вашу прибыль.</p>
+            <a href="#" class="z-20 mt-8 btn btn-blank !py-3 !px-6 flex gap-2">
+                <p>Перейти в личный кабинет</p>
+                 <svg width="20.000000" height="20.000000" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect id="arrow 1" rx="0.000000" width="19.000000" height="19.000000"
+                        transform="translate(0.500000 20.500000) rotate(-90.000000)" fill="#FFFFFF" fill-opacity="0" />
+                    <g clip-path="url(#clip136_4351)">
+                        <path id="Vector"
+                            d="M7.73 14.78C7.59 14.64 7.51 14.44 7.51 14.25C7.51 14.05 7.59 13.86 7.73 13.72L11.45 10L7.73 6.28C7.66 6.21 7.6 6.12 7.56 6.03C7.52 5.94 7.5 5.84 7.5 5.74C7.49 5.64 7.51 5.54 7.55 5.45C7.59 5.35 7.64 5.27 7.71 5.2C7.79 5.13 7.87 5.07 7.96 5.03C8.06 4.99 8.16 4.98 8.26 4.98C8.36 4.98 8.46 5 8.55 5.04C8.64 5.08 8.73 5.14 8.79 5.22L13.04 9.47C13.18 9.61 13.26 9.8 13.26 10C13.26 10.19 13.18 10.39 13.04 10.53L8.79 14.78C8.65 14.92 8.46 15 8.26 15C8.06 15 7.87 14.92 7.73 14.78Z"
+                            fill-opacity="1.000000" fill-rule="evenodd" />
+                    </g>
+                </svg>
+            </a>
+
+            <img class="absolute z-10 md:scale-100 scale-150 top-12 sm:top-20 md:top-0 -left-36 lg:left-0" src="./img/line2.svg" alt="line">
+            <img class="absolute z-10 md:scale-100 scale-150 top-48 sm:top-20 md:top-0 -right-36 lg:right-0" src="./img/line.svg" alt="line">
+        </div>
+    </div>
+</section>
+		<section id="prefooter" class="pb-8">
+    <div class="container">
+        <div class="flex justify-between flex-col sm:flex-row">
+            <div class="basis-1/2">
+                <div class="flex">
+                    <ul class="basis-1/2 flex flex-col gap-6">
+                        <li>
+                            <a class="link !text-gray-700" href="">О услуге</a>
+                        </li>
+                        <li>
+                            <a class="link !text-gray-700" href="">Преимущества</a>
+                        </li>
+                        <li>
+                            <a class="link !text-gray-700" href="">Как работает бот</a>
+                        </li>
+                        <li>
+                            <a class="link !text-gray-700" href="">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="link !text-gray-700 flex gap-2 items-center" href="">
+                                Перейти в бот
+                                <div class="new"><p>NEW</p></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="basis-1/2 flex flex-col gap-6">
+                        <li>
+                            <a class="link !text-gray-700" href="">Условия возврата</a>
+                        </li>
+                        <li>
+                            <a class="link !text-gray-700" href="">Обработка персональных данных</a>
+                        </li>
+                        <li>
+                            <a class="link !text-gray-700" href="">Публичная оферта</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-20 sm:mt-0 basis-1/2 flex items-start sm:items-end flex-col">
+                <img class="w-40" src="./img/logo-dark.svg" alt="logo">
+                <p class="mb-2 mt-2 sm:mt-auto text-gray-700 text-xs">© 2024 ОЦИФРОН</p>
+            </div>
+        </div>
+    </div>
+</section>
+		<section id="footer" class="pb-12">
+    <div class="container">
+        <div class="mt-8 md:mt-16 w-full lg:w-5/6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 !text-gray-700">
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">Название организации</div>
+                <div class="text-xs text-gray-500">ИНДИВИДУАЛЬНЫЙ ПРЕДПРИНИМАТЕЛЬ НАБИЕВ ЭЛЬВИН ШАХЛАР ОГЛЫ</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">Юридический адрес организации</div>
+                <div class="text-xs text-gray-500">175404, РОССИЯ, НОВГОРОДСКАЯ ОБЛ, СОЛЕЦКИЙ Р-Н, Д ИЛОВЁНКА, ПЕР ВЕТЕРАНОВ, Д 9</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">ИНН</div>
+                <div class="text-xs text-gray-500">531502263400</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">ОГРН/ОГРИП</div>
+                <div class="text-xs text-gray-500">322530000018689</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">Расчётный счёт</div>
+                <div class="text-xs text-gray-500">4080281010000423629</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">Банк</div>
+                <div class="text-xs text-gray-500">АО «ТБанк»</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">ИНН банка</div>
+                <div class="text-xs text-gray-500">7710140679</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">БИК банка</div>
+                <div class="text-xs text-gray-500">044525974</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">Корреспондентский счёт банка</div>
+                <div class="text-xs text-gray-500">30101810452500000974</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">Юридический адрес банка</div>
+                <div class="text-xs text-gray-500">127287, г. Москва, ул. Хуторская 2-я, д. 38А, стр. 26</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">Электронная почта для связи</div>
+                <div class="text-xs text-gray-500">e.nabiev1997@yandex.ru</div>
+          
+                <div class="mt-2 md:mt-0 text-xs font-medium text-gray-400">WhatsApp для обратной связи</div>
+                <div class="text-xs text-gray-500">+79992800848</div>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+	</main>
+	<script src="./js/scripts.js"></script>
+</body>
+
+</html>

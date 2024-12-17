@@ -1,0 +1,25 @@
+<svg width="1276.298340" height="329.293579" viewBox="0 0 1276.3 329.294" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_136_4285_dd" x="0.000000" y="0.000000" width="1276.298340" height="329.293579" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feGaussianBlur in="BackgroundImage" stdDeviation="33.3333"/>
+			<feComposite in2="SourceAlpha" operator="in" result="effect_backgroundBlur_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_backgroundBlur_1" result="shape"/>
+		</filter>
+		<linearGradient x1="638.149048" y1="0.500000" x2="638.149048" y2="342.239136" id="paint_linear_136_4285_0" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF" stop-opacity="0.000000"/>
+			<stop offset="1.000000" stop-color="#FFFFFF"/>
+		</linearGradient>
+		<linearGradient x1="638.149048" y1="0.500000" x2="638.149048" y2="324.013062" id="paint_linear_136_4285_1" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF" stop-opacity="0.000000"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.701961"/>
+		</linearGradient>
+	</defs>
+	<g filter="url(#filter_136_4285_dd)">
+		<path id="Vector 46" d="M590.92 316.94L0.23 0.5L1276.06 0.5L685.37 316.94C655.87 332.74 620.42 332.74 590.92 316.94Z" fill="url(#paint_linear_136_4285_0)" fill-opacity="0.300000" fill-rule="nonzero"/>
+		<path id="Vector 46" d="M590.92 316.94C620.42 332.74 655.87 332.74 685.37 316.94L1276.06 0.5L0.23 0.5L590.92 316.94Z" stroke="url(#paint_linear_136_4285_1)" stroke-opacity="1.000000" stroke-width="1.000000"/>
+	</g>
+</svg>
