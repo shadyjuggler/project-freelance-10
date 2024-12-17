@@ -1,0 +1,36 @@
+<nav class="relative z-50 py-8 flex justify-between items-center">
+    <div class="basis-1/2 lg:basis-1/4">
+        <img src="./img/logo.svg" alt="logo">
+    </div>
+    <div id="dd-menu" class="absolute hidden z-30 shadow-md shadow-gray-500 lg:shadow-none  lg:!flex items-start flex-col lg:flex-row p-6 lg:p-0 w-full rounded-md right-0 top-full bg-white lg:bg-transparent lg:static basis-2/3 lg:basis-3/4 justify-between lg:items-center">
+        <div>
+            <ul class="text-sm flex-col lg:flex-row flex gap-4 lg:gap-6">
+                <li>
+                    <a class="purple lg:!text-white link" href="">О приложении</a>
+                </li>
+                <li>
+                    <a class="purple lg:!text-white link" href="">Преимущества</a>
+                </li>
+                <li>
+                    <a class="purple lg:!text-white link" href="">
+                        Как работает
+                    </a>
+                </li>
+                <li>
+                    <a class="purple lg:!text-white link" href="">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex mt-4 lg:mt-0 gap-4 lg:gap-6">
+            <a href="#" class="btn btn-blank">
+                <p>Войти</p>
+            </a>
+            <a href="#" class="btn btn-white">
+                <p>Регистрация</p>
+            </a>
+        </div>
+    </div>
+    <button onclick="document.getElementById('dd-menu').classList.toggle('hidden')" class="lg:hidden w-8">
+        <img src="./img/burger.svg" alt="burger">
+    </button>
+</nav>

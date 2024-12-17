@@ -1,0 +1,47 @@
+.pink {
+    background-color: #EBE7FF;
+
+    p {
+        color: #7462CA;
+
+    }
+}
+
+.green {
+    background-color: #EAFFE7;
+
+    p {
+        color: #4BA93E
+    }
+}
+
+.blue {
+    background-color: #E7EEFF;
+    p {
+        color: #4C2EE2
+    }
+}
+
+.yellow {
+    background-color: #FCF3D5;
+    p {
+        color: #F7CE46;
+    }
+}
+
+.bg-main {
+    background: linear-gradient(63.14deg, rgb(147, 93, 243) 10.321%, rgb(85, 54, 141) 151.874%);
+}
+
+.bg-card {
+    box-shadow: 0px 12px 24px 0px rgba(27, 69, 240, 0.05);
+    background: linear-gradient(109.53deg, rgb(147, 93, 243) 5.183%, rgb(85, 54, 141) 264.521%);
+}
+
+.bg-dark {
+    background: linear-gradient(63.14deg, rgba(147, 93, 243, 0.5) 3.138%, rgba(85, 54, 141, 0.5) 152.851%), rgb(6, 15, 55);
+}
+
+.purple {
+    color: rgb(116, 74, 191);
+}

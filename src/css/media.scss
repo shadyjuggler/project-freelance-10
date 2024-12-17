@@ -1,0 +1,42 @@
+
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px !important;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav .btn {
+        background-color: rgb(116, 74, 191);
+        border-color: rgb(116, 74, 191);
+
+        p {
+            color: white;
+
+        }
+
+        &:hover {
+            background-color: white;
+
+            p {
+                color: rgb(116, 74, 191);
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 868px;
+    }
+}
+
+@media (max-width: 900px) {}
