@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+    <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -10,82 +9,82 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/style.css" />	
 </head>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<body>
-	<main class="container mx-auto">
-		<header class="py-4">
-    <nav class="grid grid-cols-3 items-center">
-    <img src="../img//logo.svg" alt="logo">
+    <body>
+        <main class="container mx-auto">
+            <header class="pb-4">
+    <nav class="py-4 flex justify-between md:grid lg:py-8 grid-cols-2 lg:grid-cols-3 items-center">
+    <img src="./img/logo.svg" alt="logo" class="w-16 sm:w-auto" >
     
-    <div class="flex gap-4 justify-center">
-        <p class="link text-lg"><a href="#services">Услуги</a></p>
-        <p class="link text-lg"><a href="#about">О нас</a></p>
-        <p class="link text-lg"><a href="#portfolio">Портфолио</a></p>
-        <p class="link text-lg"><a href="#faq">FAQ</a></p>
+    <div class="basis-4/5 flex gap-4 sm:gap-8 justify-end lg:justify-center">
+        <p class="link  text-sm sm:text-base lg:text-lg"><a href="#services">Услуги</a></p>
+        <p class="link  text-sm sm:text-base lg:text-lg"><a href="#about">О нас</a></p>
+        <p class="link  text-sm sm:text-base lg:text-lg"><a href="#portfolio">Портфолио</a></p>
+        <p class="link  text-sm sm:text-base lg:text-lg"><a href="#faq">FAQ</a></p>
     </div>
 
-    <div class="flex gap-4 items-start justify-end">
-        <img src="../img/whatsapp.svg" alt="whatsapp">
+    <div class="hidden lg:flex gap-2 xl:gap-4 items-start justify-end">
+        <img src="./img/whatsapp.svg" alt="whatsapp">
         <div>
             <p class="font-bold tracking-widest leading-none">+371 29921194</p>
             <p class="text-sm leading-none">на связи с 8:00 до 19:00</p>
         </div>
     </div>
 </nav>
-    <div class="mt-8 flex">
-        <div class=" py-8 flex flex-col max-w-xl items-start">
-            <h1 class="text-5xl font-black">ЭЛЕКТРОМОНТАЖНЫЕ <br> РАБОТЫ “ПОД КЛЮЧ”</h1>
-            <h2 class="mt-8 text-4xl pl-8 max-w-sm">в квартирах, домах, коммерческих и поизводственных объектах Риги</h2>
+    <div class="flex justify-center">
+        <div class=" py-8 flex flex-col max-w-xlitems-start">
+            <h1 class="text-3xl sm:text-4xl 2xl:text-5xl font-black text-center lg:text-left">ЭЛЕКТРОМОНТАЖНЫЕ <br> РАБОТЫ “ПОД КЛЮЧ”</h1>
+            <h2 class="mt-4 2xl:mt-8 text-xl sm:text-2xl 2xl:text-4xl lg:pl-8 text-center lg:text-left max-w-lg lg:max-w-sm">в квартирах, домах, коммерческих и поизводственных объектах Риги</h2>
 
-            <div class="mt-16">
-                <button class="btn text-xl btn-primary py-5 px-10">Получить консультацию</button>
+            <div class="mt-8 lg:mt-16 lg:max-w-xs">
+                <button class="btn text-xl btn-primary py-5 w-full">Получить консультацию</button>
                 <p class="mt-2 text-lg text-center">Это абсолютно бесплатно</p>
             </div>
         </div>
-        <div>
-            <img src="../img/header-bg.png" alt="bg">
+        <div class="hidden lg:block max-w-3xl 2xl:w-auto">
+            <img src="./img/header-bg.png" alt="bg">
         </div>
     </div>
 
-    <div class="grid grid-cols-3 gap-8 p-16 rounded-lg -translate-y-20 bg-white bshadow">
-        <div class="flex gap-8 items-center`">
-            <div class="w-24">
-                <img class="max-w-none" src="../img/list1.png" alt="list1">
+    <div class="flex flex-wrap lg:flex-nowrap lg:grid grid-cols-3 gap-4 lg:gap-8 p-4 xl:p-8 2xl:p-16 rounded-lg -translate-y-0 bg-white bshadow">
+        <div class="w-full lg:w-auto flex gap-4 sm:gap-2 xl:gap-1 items-center">
+            <div class="basis-1/4 lg:basis-1/3 flex justify-center">
+                <img class="max-w-auto xl:max-w-none" src="./img/list1.png" alt="list1">
             </div>
-            <div>
-                <p class="font-bold text-xl">Работаем по договору</p>
-                <p class="mt-2">Фиксируем сроки и стоимость, предоставляем всю отчетность</p>
-            </div>
-        </div>
-        <div class="flex gap-8 items-center`">
-            <div class="w-24">
-                <img class="max-w-none" src="../img/list2.png" alt="list1">
-            </div>
-            <div>
-                <p class="font-bold text-xl">Не срываем сроки</p>
-                <p class="mt-2">В 100% случаях мы заканчиваем работы точно в срок, либо раньше чем указано в договоре.</p>
+            <div class="basis-3/4 lg:basis-2/3 ">
+                <p class="font-bold text-base xl:text-xl">Работаем по договору</p>
+                <p class="mt-2 text-sm xl:text-base">Фиксируем сроки и стоимость, предоставляем всю отчетность</p>
             </div>
         </div>
-        <div class="flex gap-8 items-center`">
-            <div class="w-24">
-                <img class="max-w-none" src="../img/list3.png" alt="list1">
+        <div class="w-full lg:w-auto flex gap-4 sm:gap-2 xl:gap-1 items-center">
+            <div class="basis-1/4 lg:basis-1/3 flex justify-center">
+                <img class="max-w-auto xl:max-w-none" src="./img/list2.png" alt="list1">
             </div>
-            <div>
-                <p class="font-bold text-xl">Опыт 10+ лет</p>
-                <p class="mt-2">А так же все нужные сертификаты и знания</p>
+            <div class="basis-3/4 lg:basis-2/3">
+                <p class="font-bold text-base xl:text-xl">Не срываем сроки</p>
+                <p class="mt-2 text-sm xl:text-base">В 100% случаях мы заканчиваем работы точно в срок, либо раньше чем указано в договоре.</p>
+            </div>
+        </div>
+        <div class="w-full lg:w-auto flex gap-4 sm:gap-2 xl:gap-1 items-center">
+            <div class="basis-1/4 lg:basis-1/3 flex justify-center">
+                <img class="max-w-auto xl:max-w-none" src="./img/list3.png" alt="list1">
+            </div>
+            <div class="basis-3/4 lg:basis-2/3">
+                <p class="font-bold text-base xl:text-xl">Опыт 10+ лет</p>
+                <p class="mt-2 text-sm xl:text-base">А так же все нужные сертификаты и знания</p>
             </div>
         </div>
     </div>
 </header>
-		<section id="services" class="pt-8 pb-16">
-    <h2 class="text-4xl font-black text-center heavy">ОКАЗЫВАЕМ ВЕСЬ СПЕКТР <br> ЭЛЕКТРОМОНТАЖНЫХ УСЛУГ</h2>
+            <section id="services" class="pt-16 2xl:pt-8 pb-16">
+    <h2 class="text-3xl lg:text-4xl font-black text-center heavy">ОКАЗЫВАЕМ ВЕСЬ СПЕКТР <br> ЭЛЕКТРОМОНТАЖНЫХ УСЛУГ</h2>
 
-    <div class="mt-24 flex flex-wrap gap-y-24 gap-x-16 justify-center">
+    <div class="mt-8 sm:mt-16 lg:mt-24 flex flex-wrap gap-y-8 lg:gap-y-24 gap-x-3 lg:gap-x-16 justify-center">
         <div class="flex flex-col rounded-xl shadow-xl p-6 bshadow w-full" style="max-width: 377px;">
-            <img class="rounded-xl" src="../img/service1.png" alt="">
-            <p class="mt-4 font-semibold text-2xl ">Монтаж/Проектрование/обслуживание электросети</p>
-            <ul class="mt-4 flex flex-col gap-2">
+            <img class="rounded-xl" src="./img/service1.png" alt="">
+            <p class="mt-4 font-semibold text-lg lg:text-2xl ">Монтаж/Проектрование/обслуживание электросети</p>
+            <ul class="mt-2 lg:mt-4 flex flex-col gap-2">
                 <li class="flex gap-2">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
@@ -121,9 +120,9 @@
             <button class="mt-4 btn py-4 btn-secondary">Обсудить задачу с мастером</button>
         </div>
         <div class="flex flex-col rounded-xl shadow-xl p-6 bshadow w-full" style="max-width: 377px;">
-            <img class="rounded-xl" src="../img/service2.png" alt="">
-            <p class="mt-4 font-semibold text-2xl ">Установка и обслуживание систем "Умный дом"</p>
-            <ul class="mt-4 flex flex-col gap-2">
+            <img class="rounded-xl" src="./img/service2.png" alt="">
+            <p class="mt-4 font-semibold text-lg lg:text-2xl ">Установка и обслуживание систем "Умный дом"</p>
+            <ul class="mt-2 lg:mt-4 flex flex-col gap-2">
                 <li class="flex gap-2">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
@@ -159,9 +158,9 @@
             <button class="mt-4 btn py-4 btn-secondary">Обсудить задачу с мастером</button>
         </div>
         <div class="flex flex-col rounded-xl shadow-xl p-6 bshadow w-full" style="max-width: 377px;">
-            <img class="rounded-xl" src="../img/service3.png" alt="">
-            <p class="mt-4 font-semibold text-2xl ">Монтаж и обслуживание электрических сетей</p>
-            <ul class="mt-4 flex flex-col gap-2">
+            <img class="rounded-xl" src="./img/service3.png" alt="">
+            <p class="mt-4 font-semibold text-lg lg:text-2xl ">Монтаж и обслуживание электрических сетей</p>
+            <ul class="mt-2 lg:mt-4 flex flex-col gap-2">
                 <li class="flex gap-2">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
@@ -197,9 +196,9 @@
             <button class="mt-4 btn py-4 btn-secondary">Обсудить задачу с мастером</button>
         </div>
         <div class="flex flex-col rounded-xl shadow-xl p-6 bshadow w-full" style="max-width: 377px;">
-            <img class="rounded-xl" src="../img/service3.png" alt="">
-            <p class="mt-4 font-semibold text-2xl ">Монтаж/Проектрование/обслуживание электросети</p>
-            <ul class="mt-4 flex flex-col gap-2">
+            <img class="rounded-xl" src="./img/service3.png" alt="">
+            <p class="mt-4 font-semibold text-lg lg:text-2xl ">Монтаж/Проектрование/обслуживание электросети</p>
+            <ul class="mt-2 lg:mt-4 flex flex-col gap-2">
                 <li class="flex gap-2">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
@@ -235,9 +234,9 @@
             <button class="mt-4 btn py-4 btn-secondary">Обсудить задачу с мастером</button>
         </div>
         <div class="flex flex-col rounded-xl shadow-xl p-6 bshadow w-full" style="max-width: 377px;">
-            <img class="rounded-xl" src="../img/service4.png" alt="">
-            <p class="mt-4 font-semibold text-2xl ">Охранная и пожарная сигнализация</p>
-            <ul class="mt-4 flex flex-col gap-2">
+            <img class="rounded-xl" src="./img/service4.png" alt="">
+            <p class="mt-4 font-semibold text-lg lg:text-2xl ">Охранная и пожарная сигнализация</p>
+            <ul class="mt-2 lg:mt-4 flex flex-col gap-2">
                 <li class="flex gap-2">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
@@ -273,9 +272,9 @@
             <button class="mt-4 btn py-4 btn-secondary">Обсудить задачу с мастером</button>
         </div>
         <div class="flex flex-col rounded-xl shadow-xl p-6 bshadow w-full" style="max-width: 377px;">
-            <img class="rounded-xl" src="../img/service5.png" alt="">
-            <p class="mt-4 font-semibold text-2xl ">Установка и обслуживание систем видеонаблюдения</p>
-            <ul class="mt-4 flex flex-col gap-2">
+            <img class="rounded-xl" src="./img/service5.png" alt="">
+            <p class="mt-4 font-semibold text-lg lg:text-2xl ">Установка и обслуживание систем видеонаблюдения</p>
+            <ul class="mt-2 lg:mt-4 flex flex-col gap-2">
                 <li class="flex gap-2">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
@@ -311,9 +310,9 @@
             <button class="mt-4 btn py-4 btn-secondary">Обсудить задачу с мастером</button>
         </div>
         <div class="flex flex-col rounded-xl shadow-xl p-6 bshadow w-full" style="max-width: 377px;">
-            <img class="rounded-xl" src="../img/service6.png" alt="">
-            <p class="mt-4 font-semibold text-2xl ">Системы контроля доступа</p>
-            <ul class="mt-4 flex flex-col gap-2">
+            <img class="rounded-xl" src="./img/service6.png" alt="">
+            <p class="mt-4 font-semibold text-lg lg:text-2xl ">Системы контроля доступа</p>
+            <ul class="mt-2 lg:mt-4 flex flex-col gap-2">
                 <li class="flex gap-2">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
@@ -349,9 +348,9 @@
             <button class="mt-auto btn py-4 btn-secondary">Обсудить задачу с мастером</button>
         </div>
         <div class="flex flex-col rounded-xl shadow-xl p-6 bshadow w-full" style="max-width: 377px;">
-            <img class="rounded-xl" src="../img/service7.png" alt="">
-            <p class="mt-4 font-semibold text-2xl ">Установка и обслуживание автоматизированных систем</p>
-            <ul class="mt-4 flex flex-col gap-2">
+            <img class="rounded-xl" src="./img/service7.png" alt="">
+            <p class="mt-4 font-semibold text-lg lg:text-2xl ">Установка и обслуживание автоматизированных систем</p>
+            <ul class="mt-2 lg:mt-4 flex flex-col gap-2">
                 <li class="flex gap-2">
                     <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
@@ -388,67 +387,123 @@
         </div>
     </div>
 </section>
-		<section id="process" class="py-24 overflow-x-hidden">
+            <section id="process" class="py:16 lg:py-24 overflow-x-hidden">
     <h2 class="heavy text-center text-4xl font-black">ПРОЦЕСС НАШЕЙ РАБОТЫ</h2>
 
-    <div class="mt-16 px-8" >
+    <div class="mt-16 sm:px-8" >
         <div class="swiper" id="processSlider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="../img/process1.png" alt="process">
+                <div class="swiper-slide flex justify-center md:block">
+                    <img src="./img/process1.png" alt="process">
                 </div>
-                <div class="swiper-slide">
-                    <img src="../img/process2.png" alt="process">
+                <div class="swiper-slide flex justify-center md:block">
+                    <img src="./img/process2.png" alt="process">
                 </div>
-                <div class="swiper-slide">
-                    <img src="../img/process3.png" alt="process">
+                <div class="swiper-slide flex justify-center md:block">
+                    <img src="./img/process3.png" alt="process">
                 </div>
-                <div class="swiper-slide">
-                    <img src="../img/process4.png" alt="process">
+                <div class="swiper-slide flex justify-center md:block">
+                    <img src="./img/process4.png" alt="process">
                 </div>
-                <div class="swiper-slide">
-                    <img src="../img/process5.png" alt="process">
+                <div class="swiper-slide flex justify-center md:block">
+                    <img src="./img/process5.png" alt="process">
                 </div>
-                <div class="swiper-slide">
-                    <img src="../img/process6.png" alt="process">
+                <div class="swiper-slide flex justify-center md:block">
+                    <img src="./img/process6.png" alt="process">
                 </div>
-                <div class="swiper-slide">
-                    <img src="../img/process7.png" alt="process">
+                <div class="swiper-slide flex justify-center md:block">
+                    <img src="./img/process7.png" alt="process">
                 </div>
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="hidden sm:block swiper-button-prev"></div>
+            <div class="hidden sm:block swiper-button-next"></div>
         </div>
     </div>
 </section>
+ <section id="about" class="py-16 md:py-24">
+    <div class="flex gap-8 xl:px-20 lg:items-center">
+        <div class="w-full md:basis-3/5 flex gap-8">
+            <div class="hidden xl:block pt-4">
+                <div class="w-28 h-1 bg-black"></div>
+            </div>
+            <div class="">
+                <h3 class="text-2xl lg:text-3xl font-bold text-center md:text-left">
+                    Здравствуйте меня зовут Герман <br> Котлярс, я являюсь владельцем <br>
+                    компании “Kram EL“
+                </h3>
+                <p class="mt-4 lg:text-lg text-center md:text-left">
+                    У меня 19 лет опыта работы в монтаже и обслуживании систем.
+                    Я начал с установки сетей для провайдеров и затем перешел на
+                    строительные объекты, сосредоточившись на компьютерных
+                    сетях. Позже изучил охранные и пожарные сигнализации,
+                    автоматизацию и взял крупные подряды в слаботочных системах.
+                    Я получил образование и сертификаты электромонтажника и по
+                    измерениям, а также освоил технологии "умного дома" на базе
+                    KNX, предлагая клиентам современные решения.
+                </p>
+                <h3 class="mt-6 text-2xl font-bold text-center md:text-left">
+                    Поэтому обращаясь в “KRAM EL” вы <br> гарантированно получаете:
+                </h3>
+                <ul class="mt-6 flex flex-col gap-2 max-w-lg mx-auto md:ml-0 md:mr-0">
+                    <li class="flex gap-2">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
+                            </svg>
+                        <p class="">Профессиональный монтаж систем с учетом всех норм и стандартов безопасности.</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
+                            </svg>
+                        <p class="">Комплексное обслуживание различных систем: от охранных до "умного дома".</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
+                            </svg>
+                        <p class="">Индивидуальный подход к каждому проекту для максимальной эффективности.</p>
+                    </li>
+                    <li class="flex gap-2">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.79627 13.5L3.28177 9.22495L4.41039 8.1562L7.79627 11.3625L15.063 4.4812L16.1916 5.54995L7.79627 13.5Z" fill="#4CC170"/>
+                            </svg>
+                        <p class="">Гарантия надежности и безопасности всех установленных систем.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="hidden md:block basis-2/5">
+            <img src="./img/person.png" alt="person" />
+        </div>
+    </div>
+</section>
+ <section id="review" class="py:16 lg:py-24">
+    <div class="bshadow rounded-xl bg-white py-10 xl:py-16">
+        <h2 class="heavy pl-8 md:pl-16 text-3xl sm:text-4xl">Отзывы о нашей работе</h2>
 
-		<section id="review" class="py-24">
-    <div class="bshadow rounded-xl bg-white py-16">
-        <h2 class="heavy pl-16 text-4xl">Отзывы о нашей работе</h2>
-
-        <div class="overflow-hidden py-12">
-            <div class="swiper overflow-hidden px-16" id="reviewSlider">
+        <div class="overflow-hidden py-8 xl:py-12">
+            <div class="swiper overflow-hidden px-2 sm:px-8 xl:px-16" id="reviewSlider">
                 <div class="swiper-wrapper">
                     <div
-                        class="swiper-slide bshadow relative flex h-80 max-w-md flex-col rounded-2xl p-8"
+                        class="swiper-slide bshadow relative flex h-64 2xl:h-80 max-w-auto md:max-w-md flex-col !bg-slate-50 md:!bg-white rounded-2xl p-5 2x:p-8"
                     >
                         <img
-                            class="absolute right-8 top-8 opacity-40"
-                            src="../img/quotes.svg"
+                            class="absolute right-4 2xl:right-8 top-4 2xl:top-8 opacity-40 scale-75 2xl:scale-100"
+                            src="./img/quotes.svg"
                             alt="qutoes"
                         />
                         <div class="flex items-center gap-4">
                             <div class="flex gap-2 ">
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
                             </div>
                             <p class="text-sm font-bold">(4.9)</p>
                         </div>
 
-                        <p class="mt-8 max-w-xs">
+                        <p class="mt-4 2xl:mt-8 text-sm 2xl:text-base max-w-xs">
                             Сотрудничество с Германом стало для нас настоящим
                             открытием! Он профессионально выполнил проект по
                             установке системы "умный дом", учтя все наши
@@ -459,25 +514,25 @@
                         <p class="mt-auto font-bold">Алексей П.</p>
                     </div>
                     <div
-                        class="swiper-slide bshadow relative flex h-80 max-w-md flex-col rounded-2xl p-8"
+                        class="swiper-slide bshadow relative flex h-64 2xl:h-80 max-w-auto md:max-w-md flex-col !bg-slate-50 md:!bg-white rounded-2xl p-5 2x:p-8"
                     >
                         <img
-                            class="absolute right-8 top-8 opacity-40"
-                            src="../img/quotes.svg"
+                            class="absolute right-4 2xl:right-8 top-4 2xl:top-8 opacity-40 scale-75 2xl:scale-100"
+                            src="./img/quotes.svg"
                             alt="qutoes"
                         />
                         <div class="flex items-center gap-4">
                             <div class="flex gap-2 ">
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
                             </div>
                             <p class="text-sm font-bold">(5.0)</p>
                         </div>
 
-                        <p class="mt-8 max-w-xs">
+                        <p class="mt-4 2xl:mt-8 text-sm 2xl:text-base max-w-xs">
                             Герман - настоящий мастер своего дела! Мы обратились
                             к нему для монтажа охранной сигнализации, и остались
                             очень довольны результатом. Все выполнено аккуратно
@@ -487,25 +542,25 @@
                         <p class="mt-auto font-bold">Елена С.</p>
                     </div>
                     <div
-                        class="swiper-slide bshadow relative flex h-80 max-w-md flex-col rounded-2xl p-8"
+                        class="swiper-slide bshadow relative flex h-64 2xl:h-80 max-w-auto md:max-w-md flex-col !bg-slate-50 md:!bg-white rounded-2xl p-5 2x:p-8"
                     >
                         <img
-                            class="absolute right-8 top-8 opacity-40"
-                            src="../img/quotes.svg"
+                            class="absolute right-4 2xl:right-8 top-4 2xl:top-8 opacity-40 scale-75 2xl:scale-100"
+                            src="./img/quotes.svg"
                             alt="qutoes"
                         />
                         <div class="flex items-center gap-4">
                             <div class="flex gap-2 ">
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
                             </div>
                             <p class="text-sm font-bold">(5.0)</p>
                         </div>
 
-                        <p class="mt-8 max-w-xs">
+                        <p class="mt-4 2xl:mt-8 text-sm 2xl:text-base max-w-xs">
                             Отличный специалист! Герман помог нам с
                             проектированием и установкой электропроводки на
                             новом строительном объекте. Все работы выполнены
@@ -516,25 +571,25 @@
                         <p class="mt-auto font-bold">Дмитрий К.</p>
                     </div>
                     <div
-                        class="swiper-slide bshadow relative flex h-80 max-w-md flex-col rounded-2xl p-8"
+                        class="swiper-slide bshadow relative flex h-64 2xl:h-80 max-w-auto md:max-w-md flex-col !bg-slate-50 md:!bg-white rounded-2xl p-5 2x:p-8"
                     >
                         <img
-                            class="absolute right-8 top-8 opacity-40"
-                            src="../img/quotes.svg"
+                            class="absolute right-4 2xl:right-8 top-4 2xl:top-8 opacity-40 scale-75 2xl:scale-100"
+                            src="./img/quotes.svg"
                             alt="qutoes"
                         />
                         <div class="flex items-center gap-4">
                             <div class="flex gap-2 ">
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
                             </div>
                             <p class="text-sm font-bold">(5.0)</p>
                         </div>
 
-                        <p class="mt-8 max-w-xs">
+                        <p class="mt-4 2xl:mt-8 text-sm 2xl:text-base max-w-xs">
                             Сотрудничество с Германом стало для нас настоящим
                             открытием! Он профессионально выполнил проект по
                             установке системы "умный дом", учтя все наши
@@ -545,25 +600,25 @@
                         <p class="mt-auto font-bold">Алексей П.</p>
                     </div>
                     <div
-                        class="swiper-slide bshadow relative flex h-80 max-w-md flex-col rounded-2xl p-8"
+                        class="swiper-slide bshadow relative flex h-64 2xl:h-80 max-w-auto md:max-w-md flex-col !bg-slate-50 md:!bg-white rounded-2xl p-5 2x:p-8"
                     >
                         <img
-                            class="absolute right-8 top-8 opacity-40"
-                            src="../img/quotes.svg"
+                            class="absolute right-4 2xl:right-8 top-4 2xl:top-8 opacity-40 scale-75 2xl:scale-100"
+                            src="./img/quotes.svg"
                             alt="qutoes"
                         />
                         <div class="flex items-center gap-4">
                             <div class="flex gap-2 ">
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
                             </div>
                             <p class="text-sm font-bold">(5.0)</p>
                         </div>
 
-                        <p class="mt-8 max-w-xs">
+                        <p class="mt-4 2xl:mt-8 text-sm 2xl:text-base max-w-xs">
                             Сотрудничество с Германом стало для нас настоящим
                             открытием! Он профессионально выполнил проект по
                             установке системы "умный дом", учтя все наши
@@ -574,25 +629,25 @@
                         <p class="mt-auto font-bold">Алексей П.</p>
                     </div>
                     <div
-                        class="swiper-slide bshadow relative flex h-80 max-w-md flex-col rounded-2xl p-8"
+                        class="swiper-slide bshadow relative flex h-64 2xl:h-80 max-w-auto md:max-w-md flex-col !bg-slate-50 md:!bg-white rounded-2xl p-5 2x:p-8"
                     >
                         <img
-                            class="absolute right-8 top-8 opacity-40"
-                            src="../img/quotes.svg"
+                            class="absolute right-4 2xl:right-8 top-4 2xl:top-8 opacity-40 scale-75 2xl:scale-100"
+                            src="./img/quotes.svg"
                             alt="qutoes"
                         />
                         <div class="flex items-center gap-4">
                             <div class="flex gap-2 ">
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
                             </div>
                             <p class="text-sm font-bold">(5.0)</p>
                         </div>
 
-                        <p class="mt-8 max-w-xs">
+                        <p class="mt-4 2xl:mt-8 text-sm 2xl:text-base max-w-xs">
                             Сотрудничество с Германом стало для нас настоящим
                             открытием! Он профессионально выполнил проект по
                             установке системы "умный дом", учтя все наши
@@ -603,25 +658,25 @@
                         <p class="mt-auto font-bold">Алексей П.</p>
                     </div>
                     <div
-                        class="swiper-slide bshadow relative flex h-80 max-w-md flex-col rounded-2xl p-8"
+                        class="swiper-slide bshadow relative flex h-64 2xl:h-80 max-w-auto md:max-w-md flex-col !bg-slate-50 md:!bg-white rounded-2xl p-5 2x:p-8"
                     >
                         <img
-                            class="absolute right-8 top-8 opacity-40"
-                            src="../img/quotes.svg"
+                            class="absolute right-4 2xl:right-8 top-4 2xl:top-8 opacity-40 scale-75 2xl:scale-100"
+                            src="./img/quotes.svg"
                             alt="qutoes"
                         />
                         <div class="flex items-center gap-4">
                             <div class="flex gap-2 ">
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
-                                <img src="../img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
+                                <img src="./img/star.svg" alt="star" />
                             </div>
                             <p class="text-sm font-bold">(5.0)</p>
                         </div>
 
-                        <p class="mt-8 max-w-xs">
+                        <p class="mt-4 2xl:mt-8 text-sm 2xl:text-base max-w-xs">
                             Сотрудничество с Германом стало для нас настоящим
                             открытием! Он профессионально выполнил проект по
                             установке системы "умный дом", учтя все наши
@@ -632,17 +687,400 @@
                         <p class="mt-auto font-bold">Алексей П.</p>
                     </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="hidden md:block swiper-button-prev"></div>
+                <div class="hidden md:block swiper-button-next"></div>
             </div>
         </div>
     </div>
 </section>
 
-	</main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.5.1/SmoothScroll.min.js"></script>
+            <section id="portfolio" class="overflow-x-hidden py-16 md:py-24">
+    <h2 class="heavy text-center text-3xl sm:text-4xl font-black">
+        ПОСЛЕДНИЕ ИЗ НАШИХ РАБОТ
+    </h2>
 
-	<script src="./js/scripts.js"></script>
-</body>
+    <style>
+        .swiper-slide {
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+        }
+        .swiper-container-v {
+            background: #eee;
+        }
+        .swiper-pagination-v {
+            bottom: 30px !important;
+        }
+    </style>
 
+    <div class="md:mx-8 mt-8 md:mt-16 xl:m-16 xl:px-16">
+        <div class="swiper-container swiper-container-h relative">
+            <div class="swiper-wrapper">
+                <div
+                    class="swiper-slide bshadow flex flex-col gap-8 md:overflow-hidden rounded-2xl md:rounded-none !bg-slate-50 md:!bg-white p-4 sm:p-8 lg:flex-row 2xl:p-16"
+                >
+                    <div
+                        class="max-w-auto lg:max-w-auto lg:max-w-xl 2xl:max-w-2xl"
+                    >
+                        <div class="case1 w-full overflow-x-hidden">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none"
+                                        src="./img/case-1.1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-1.2.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="inner-pagination-1" class="mt-4 lg:mt-8 flex justify-center"></div>
+                    </div>
+
+                    <div class="flex flex-col items-start">
+                        <div class="flex flex-row lg:flex-col gap-2 lg:gap-8">
+                            <span class="max-w-xs">
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase">
+                                    ОБЪЕКТ
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg">
+                                    1-комнатная квартира на ул. Дзирнаву
+                                </p>
+                            </span>
+                            <span class="max-w-xs">
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase text-center lg:text-left">
+                                    ЧТО СДЕЛАНО
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg text-center lg:text-left">
+                                    Выполнена переборка электрического шкафа.
+                                </p>
+                            </span>
+                            <span>
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase text-right lg:text-left">
+                                    ПРИМЕРНОЕ ВРЕМЯ ВЫПОЛНЕНИЯ
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg font-bold text-right lg:text-left">3 часа</p>
+                            </span>
+                        </div>
+                        <button class="btn btn-primary mt-4 px-2 py-5 text-sm mx-auto lg:ml-0 lg:mr-0">
+                            ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide bshadow flex flex-col gap-8 overflow-hidden rounded-2xl md:rounded-none !bg-slate-50 md:!bg-white p-4 sm:p-8 lg:flex-row 2xl:p-16"
+                >
+                    <div class="max-w-auto lg:max-w-xl 2xl:max-w-2xl">
+                        <div class="case2 w-full overflow-x-hidden">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none"
+                                        src="./img/case-2.1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-2.2.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="inner-pagination-2" class="mt-4 lg:mt-8 flex justify-center"></div>
+                    </div>
+
+                    <div class="flex flex-col items-start">
+                        <div class="flex flex-row lg:flex-col gap-2 lg:gap-8">
+                            <span class="max-w-xs">
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase">
+                                    ОБЪЕКТ
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg">
+                                    1-комнатная квартира на ул. Дзирнаву
+                                </p>
+                            </span>
+                            <span class="max-w-xs">
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase text-center lg:text-left">
+                                    ЧТО СДЕЛАНО
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg text-center lg:text-left">
+                                    Выполнена переборка электрического шкафа.
+                                </p>
+                            </span>
+                            <span>
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase text-right lg:text-left">
+                                    ПРИМЕРНОЕ ВРЕМЯ ВЫПОЛНЕНИЯ
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg font-bold text-right lg:text-left">3 часа</p>
+                            </span>
+                        </div>
+                        <button class="btn btn-primary mt-4 px-2 py-5 text-sm mx-auto lg:ml-0 lg:mr-0">
+                            ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide bshadow flex flex-col gap-8 overflow-hidden rounded-2xl md:rounded-none !bg-slate-50 md:!bg-white p-4 sm:p-8 lg:flex-row 2xl:p-16"
+                >
+                    <div class="max-w-auto lg:max-w-xl 2xl:max-w-2xl">
+                        <div class="case3 w-full overflow-x-hidden">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none"
+                                        src="./img/case-3.1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-3.2.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-3.3.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-3.4.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-3.5.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="inner-pagination-3" class="mt-4 lg:mt-8 flex justify-center"></div>
+                    </div>
+
+                    <div class="flex flex-col items-start">
+                        <div class="flex flex-row lg:flex-col gap-2 lg:gap-8">
+                            <span class="max-w-xs">
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase">
+                                    ОБЪЕКТ
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg">
+                                    1-комнатная квартира на ул. Дзирнаву
+                                </p>
+                            </span>
+                            <span class="max-w-xs">
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase text-center lg:text-left">
+                                    ЧТО СДЕЛАНО
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg text-center lg:text-left">
+                                    Выполнена переборка электрического шкафа.
+                                </p>
+                            </span>
+                            <span>
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase text-right lg:text-left">
+                                    ПРИМЕРНОЕ ВРЕМЯ ВЫПОЛНЕНИЯ
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg font-bold text-right lg:text-left">3 часа</p>
+                            </span>
+                        </div>
+                        <button class="btn btn-primary mt-4 px-2 py-5 text-sm mx-auto lg:ml-0 lg:mr-0">
+                            ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="swiper-slide bshadow flex flex-col gap-8 overflow-hidden rounded-2xl md:rounded-none !bg-slate-50 md:!bg-white p-4 sm:p-8 lg:flex-row 2xl:p-16"
+                >
+                    <div class="max-w-auto lg:max-w-xl 2xl:max-w-2xl">
+                        <div class="case4 w-full overflow-x-hidden">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none"
+                                        src="./img/case-4.1.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-4.2.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-4.3.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-4.4.png"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="swiper-slide justify-center">
+                                    <img
+                                        class="select-none object-fill"
+                                        src="./img/case-4.5.png"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div id="inner-pagination-4" class="mt-4 lg:mt-8 flex justify-center"></div>
+                    </div>
+
+                    <div class="flex flex-col items-start">
+                        <div class="flex flex-row lg:flex-col gap-2 lg:gap-8">
+                            <span class="max-w-xs">
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase">
+                                    ОБЪЕКТ
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg">
+                                    1-комнатная квартира на ул. Дзирнаву
+                                </p>
+                            </span>
+                            <span class="max-w-xs">
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase text-center lg:text-left">
+                                    ЧТО СДЕЛАНО
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg text-center lg:text-left">
+                                    Выполнена переборка электрического шкафа.
+                                </p>
+                            </span>
+                            <span>
+                                <p class="text-sm sm:text-lg md:text-xl font-semibold uppercase text-right lg:text-left">
+                                    ПРИМЕРНОЕ ВРЕМЯ ВЫПОЛНЕНИЯ
+                                </p>
+                                <p class="text-sm sm:text-base md:text-lg font-bold text-right lg:text-left">3 часа</p>
+                            </span>
+                        </div>
+                        <button class="btn btn-primary mt-4 px-2 py-5 text-sm mx-auto lg:ml-0 lg:mr-0">
+                            ПОЛУЧИТЬ БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:block swiper-button-prev"></div>
+            <div class="hidden md:block swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+
+			 <section id="faq" class="pt-0 pb-16 lg:py-24">
+    <div
+        class="rounded-3xl p-4 sm:p-8 md:p-16"
+        style="
+            background: linear-gradient(
+                180deg,
+                rgba(2, 47, 80, 1) 26%,
+                rgba(10, 77, 124, 1) 100%
+            );
+        "
+    >
+        <h2 class="heavy text-center text-3xl lg:text-4xl font-black text-white">
+            Назначьте встречу в удобное для вас <br />
+            время, чтобы мы реализовали вашу идею
+        </h2>
+        <div class="mt-8 lg:mt-16 flex flex-col rounded-xl bg-white px-2 sm:px-0 py-6 md:py-10">
+            <p class="text-center text-xl md:text-2xl font-bold">Свяжитесь c нами удобным для вас способом</p>
+            <div class="mx-auto mt-8 max-w-3xl flex flex-col md:flex-row gap-4 sm:gap-8">
+                <a href="tel:+37127463234"
+                    class="btn btn-primary flex items-center justify-center gap-2 px-12 py-3"
+                >
+                    <svg
+                        width="28"
+                        height="28"
+                        viewBox="0 0 28 28"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M7.72333 12.5883C9.40333 15.89 12.11 18.585 15.4117 20.2767L17.9783 17.71C18.2933 17.395 18.76 17.29 19.1683 17.43C20.475 17.8617 21.8867 18.095 23.3333 18.095C23.975 18.095 24.5 18.62 24.5 19.2617V23.3333C24.5 23.975 23.975 24.5 23.3333 24.5C12.3783 24.5 3.5 15.6217 3.5 4.66667C3.5 4.025 4.025 3.5 4.66667 3.5H8.75C9.39167 3.5 9.91667 4.025 9.91667 4.66667C9.91667 6.125 10.15 7.525 10.5817 8.83167C10.71 9.24 10.6167 9.695 10.29 10.0217L7.72333 12.5883Z"
+                            fill="#263041"
+                        />
+                    </svg>
+
+                    +371 27463234
+                </a>
+                <button class="btn btn-green flex gap-2 items-center text-white py-2 px-12">
+                    <svg
+                        width="39"
+                        height="39"
+                        viewBox="0 0 39 39"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M30.9562 7.97884C29.4662 6.47426 27.6917 5.28128 25.7359 4.46943C23.7802 3.65757 21.6825 3.24307 19.565 3.25009C10.6925 3.25009 3.46124 10.4813 3.46124 19.3538C3.46124 22.1976 4.20874 24.9601 5.60624 27.3976L3.33124 35.7501L11.8625 33.5076C14.2187 34.7913 16.8675 35.4738 19.565 35.4738C28.4375 35.4738 35.6687 28.2426 35.6687 19.3701C35.6687 15.0638 33.995 11.0176 30.9562 7.97884ZM19.565 32.7438C17.16 32.7438 14.8037 32.0938 12.74 30.8751L12.2525 30.5826L7.18249 31.9151L8.53124 26.9751L8.20624 26.4713C6.86975 24.3378 6.16024 21.8714 6.15874 19.3538C6.15874 11.9763 12.1712 5.96384 19.5487 5.96384C23.1237 5.96384 26.4875 7.36134 29.0062 9.89634C30.2536 11.1376 31.2421 12.6142 31.9144 14.2405C32.5866 15.8668 32.9293 17.6104 32.9225 19.3701C32.955 26.7476 26.9425 32.7438 19.565 32.7438ZM26.91 22.7338C26.5037 22.5388 24.5212 21.5638 24.1637 21.4176C23.79 21.2876 23.53 21.2226 23.2537 21.6126C22.9775 22.0188 22.2137 22.9288 21.9862 23.1888C21.7587 23.4651 21.515 23.4976 21.1087 23.2863C20.7025 23.0913 19.4025 22.6526 17.875 21.2876C16.6725 20.2151 15.8762 18.8988 15.6325 18.4926C15.405 18.0863 15.6 17.8751 15.8112 17.6638C15.99 17.4851 16.2175 17.1926 16.4125 16.9651C16.6075 16.7376 16.6887 16.5588 16.8187 16.2988C16.9487 16.0226 16.8837 15.7951 16.7862 15.6001C16.6887 15.4051 15.8762 13.4226 15.5512 12.6101C15.2262 11.8301 14.885 11.9276 14.6412 11.9113H13.8612C13.585 11.9113 13.1625 12.0088 12.7887 12.4151C12.4312 12.8213 11.3912 13.7963 11.3912 15.7788C11.3912 17.7613 12.8375 19.6788 13.0325 19.9388C13.2275 20.2151 15.8762 24.2776 19.9062 26.0163C20.865 26.4388 21.6125 26.6826 22.1975 26.8613C23.1562 27.1701 24.0337 27.1213 24.7325 27.0238C25.5125 26.9101 27.1212 26.0488 27.4462 25.1063C27.7875 24.1638 27.7875 23.3676 27.6737 23.1888C27.56 23.0101 27.3162 22.9288 26.91 22.7338Z"
+                            fill="#FFF7F7"
+                        />
+                    </svg>
+
+                    Написать в whats app
+                </button>
+            </div>
+        </div>
+        <div class="mt-8 flex flex-col rounded-xl bg-white px-4 md:px-0 py-6 md:py-10">
+            <p class="text-center text-xl sm:text-2xl font-bold">
+                Записать на бесплатную консультацию
+                <form class="mt-8 flex flex-col gap-4 max-w-lg mx-auto w-full">
+                    <input class="input" placeholder="Ваше имя" type="text">
+                    <input class="input" placeholder="Ваш номер телефона" type="text">
+                    <input class="input" placeholder="Ваш E-mail" type="text">
+                    <button type="button" class="mt-4 sm:mt-8 btn btn-primary py-3.5 px-16 w-fit mx-auto uppercase">Записаться</button>
+                </form>
+            </p>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <footer class="border-t border-black">
+            <div class="container mx-auto">
+                <nav class="py-4 flex justify-between md:grid lg:py-8 grid-cols-2 lg:grid-cols-3 items-center">
+    <img src="./img/logo.svg" alt="logo" class="w-16 sm:w-auto" >
+    
+    <div class="basis-4/5 flex gap-4 sm:gap-8 justify-end lg:justify-center">
+        <p class="link  text-sm sm:text-base lg:text-lg"><a href="#services">Услуги</a></p>
+        <p class="link  text-sm sm:text-base lg:text-lg"><a href="#about">О нас</a></p>
+        <p class="link  text-sm sm:text-base lg:text-lg"><a href="#portfolio">Портфолио</a></p>
+        <p class="link  text-sm sm:text-base lg:text-lg"><a href="#faq">FAQ</a></p>
+    </div>
+
+    <div class="hidden lg:flex gap-2 xl:gap-4 items-start justify-end">
+        <img src="./img/whatsapp.svg" alt="whatsapp">
+        <div>
+            <p class="font-bold tracking-widest leading-none">+371 29921194</p>
+            <p class="text-sm leading-none">на связи с 8:00 до 19:00</p>
+        </div>
+    </div>
+</nav>
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.5.1/SmoothScroll.min.js"></script>
+
+        <script src="./js/scripts.js"></script>
+    </body>
 </html>

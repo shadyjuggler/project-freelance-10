@@ -1,6 +1,13 @@
 @import "./tailwind";
 @import "./media";
 
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    @apply px-4;
+}
 
 * {
     font-family: 'Gilroy-Regular';
@@ -43,6 +50,17 @@ h1 {
     &:hover {
         background: #f7c640;
     }
+}
+
+.btn-green {
+    background: linear-gradient(180deg, rgba(80,202,101,1) 26%, rgba(31,175,56,1) 100%);
+    background-size: 100% 200%;
+    background-position: 0 100%;
+    transition: background-position .5s;
+}
+
+.btn-green:hover {
+    background-position: 0 0;
 }
 
 .bshadow {
@@ -96,5 +114,77 @@ h1 {
     }
     .swiper-button-next {
         right: 25px;
+    }
+}
+
+.input {
+    @apply py-2 sm:py-4 px-8 bg-slate-200 placeholder:text-slate-600 rounded-lg border-0 ;
+}
+
+
+.swiper-pagination-bullet {
+    width: 80px;
+    height: 80px;
+    border-radius: 0px;
+    background-size: contain;
+    opacity: 1;
+}
+
+#inner-pagination-1 {
+    .swiper-pagination-bullet:nth-child(1) {
+        background-image: url("../img/case-1.1.png");
+    }
+    .swiper-pagination-bullet:nth-child(2) {
+        background-image: url("../img/case-1.2.png");
+    }
+}
+#inner-pagination-2 {
+    .swiper-pagination-bullet:nth-child(1) {
+        background-image: url("../img/case-2.1.png");
+    }
+    .swiper-pagination-bullet:nth-child(2) {
+        background-image: url("../img/case-2.2.png");
+    }
+}
+#inner-pagination-3 {
+    .swiper-pagination-bullet:nth-child(1) {
+        background-image: url("../img/case-3.1.png");
+    }
+    .swiper-pagination-bullet:nth-child(2) {
+        background-image: url("../img/case-3.2.png");
+    }
+    .swiper-pagination-bullet:nth-child(3) {
+        background-image: url("../img/case-3.3.png");
+    }
+    .swiper-pagination-bullet:nth-child(4) {
+        background-image: url("../img/case-3.4.png");
+    }
+    .swiper-pagination-bullet:nth-child(5) {
+        background-image: url("../img/case-3.5.png");
+    }
+}
+#inner-pagination-4 {
+    .swiper-pagination-bullet:nth-child(1) {
+        background-image: url("../img/case-4.1.png");
+    }
+    .swiper-pagination-bullet:nth-child(2) {
+        background-image: url("../img/case-4.2.png");
+    }
+    .swiper-pagination-bullet:nth-child(3) {
+        background-image: url("../img/case-4.3.png");
+    }
+    .swiper-pagination-bullet:nth-child(4) {
+        background-image: url("../img/case-4.4.png");
+    }
+    .swiper-pagination-bullet:nth-child(5) {
+        background-image: url("../img/case-4.5.png");
+    }
+}
+
+@media (max-width: 767px) {
+    #portfolio, #reviewSlider {
+        .bshadow {
+            box-shadow: none;
+        }
     }
 }
