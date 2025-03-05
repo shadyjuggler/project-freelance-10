@@ -1336,6 +1336,14 @@ h1 {
     padding-left: 4rem;
   }
 
+  .md\:pt-24 {
+    padding-top: 6rem;
+  }
+
+  .md\:pt-16 {
+    padding-top: 4rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
