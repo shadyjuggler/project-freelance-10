@@ -686,6 +686,9 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
+.mt-1 {
+  margin-top: 0.25rem;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -851,6 +854,9 @@ select {
 .whitespace-nowrap {
   white-space: nowrap;
 }
+.\!rounded-xl {
+  border-radius: 0.75rem !important;
+}
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -939,6 +945,10 @@ select {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 .pb-14 {
   padding-bottom: 3.5rem;
 }
@@ -968,6 +978,9 @@ select {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pb-24 {
+  padding-bottom: 6rem;
 }
 .text-center {
   text-align: center;
@@ -1264,16 +1277,21 @@ h1 {
   }
 }
 @media (max-width: 767px) {
-  #process .swiper-button-prev, #review .swiper-button-prev {
+  #process .swiper-button-prev, #review .swiper-button-prev, #portfolio .swiper-button-prev {
     top: auto !important;
     bottom: -60px !important;
     left: auto !important;
     right: 50% !important;
   }
-  #process .swiper-button-next, #review .swiper-button-next {
+  #process .swiper-button-next, #review .swiper-button-next, #portfolio .swiper-button-next {
     top: auto !important;
     bottom: -60px !important;
     left: 50% !important;
+  }
+}
+@media (max-width: 480px) {
+  #grebanijparagraf {
+    max-width: 16rem;
   }
 }
 @media (min-width: 640px) {
@@ -1562,6 +1580,10 @@ h1 {
 
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
   }
 
   .lg\:items-center {

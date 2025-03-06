@@ -235,7 +235,7 @@ h1 {
 }
 
 @media(max-width: 767px) {
-    #process, #review {
+    #process, #review, #portfolio {
         .swiper-button-prev {
             top: auto!important;
             bottom: -60px!important;
@@ -248,5 +248,11 @@ h1 {
             bottom: -60px!important;
             left: 50%!important;
         }
+    }
+}
+
+@media(max-width: 480px) {
+    #grebanijparagraf {
+        max-width: 16rem;
     }
 }
