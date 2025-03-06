@@ -11,6 +11,7 @@ html {
 
 * {
     font-family: 'Gilroy-Regular';
+    color: #263041;
 }
 
 h1 {
@@ -35,17 +36,22 @@ h1 {
 
 .btn-primary {
     background: linear-gradient(180deg, #ffd35b, #ffbb00, rgb(255, 168, 6));
-    background-size: 100% 200%;
-    background-position: 0 100%;
+    background-size: 100% 150%;
+    background-position: 0 0;
+    border-radius: 20px;
     transition: background-position .5s;
+    font-family: 'Gilroy-Bold';
 }
 
 .btn-primary:hover {
-    background-position: 0 0;
+    background-position: 0 100%;
+
 }
 
 .btn-secondary {
     background: #FFD35B;
+    text-transform: uppercase;
+    font-size: 13px;
 
     &:hover {
         background: #f7c640;
@@ -53,9 +59,10 @@ h1 {
 }
 
 .btn-green {
-    background: linear-gradient(180deg, rgba(80,202,101,1) 26%, rgba(31,175,56,1) 100%);
+    background: linear-gradient(180deg, rgba(80, 202, 101, 1) 26%, rgba(31, 175, 56, 1) 100%);
     background-size: 100% 200%;
     background-position: 0 100%;
+    border-radius: 20px;
     transition: background-position .5s;
 }
 
@@ -64,7 +71,10 @@ h1 {
 }
 
 .bshadow {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 38px, rgba(0, 0, 0, 0.2) 0px 15px 12px;
+    box-shadow:
+        0 0 30px rgba(0, 0, 0, .2),
+        0 2px 22px rgba(0, 0, 0, .2);
+
 }
 
 .swiper {
@@ -100,6 +110,7 @@ h1 {
 .swiper-button-prev {
     left: -25px;
 }
+
 .swiper-button-next {
     right: -25px;
 }
@@ -112,13 +123,20 @@ h1 {
     .swiper-button-prev {
         left: 25px;
     }
+
     .swiper-button-next {
         right: 25px;
     }
 }
 
 .input {
-    @apply py-2 sm:py-4 px-8 bg-slate-200 placeholder:text-slate-600 rounded-lg border-0 ;
+    @apply py-2 text-sm sm:text-base sm:py-4 px-8 rounded-lg border-0 placeholder:font-bold font-bold;
+
+    &:placeholder {
+        color: #263041;
+    }
+
+    background: #EBEBEB;
 }
 
 
@@ -126,67 +144,109 @@ h1 {
     width: 80px;
     height: 80px;
     border-radius: 0px;
-    background-size: contain;
+    background-size: cover;
     opacity: 1;
+    background-repeat: no-repeat;
+
 }
 
 #inner-pagination-1 {
     .swiper-pagination-bullet:nth-child(1) {
         background-image: url("../img/case-1.1.png");
     }
+
     .swiper-pagination-bullet:nth-child(2) {
         background-image: url("../img/case-1.2.png");
     }
 }
+
 #inner-pagination-2 {
     .swiper-pagination-bullet:nth-child(1) {
         background-image: url("../img/case-2.1.png");
     }
+
     .swiper-pagination-bullet:nth-child(2) {
         background-image: url("../img/case-2.2.png");
     }
 }
+
 #inner-pagination-3 {
     .swiper-pagination-bullet:nth-child(1) {
         background-image: url("../img/case-3.1.png");
     }
+
     .swiper-pagination-bullet:nth-child(2) {
         background-image: url("../img/case-3.2.png");
     }
+
     .swiper-pagination-bullet:nth-child(3) {
         background-image: url("../img/case-3.3.png");
     }
+
     .swiper-pagination-bullet:nth-child(4) {
         background-image: url("../img/case-3.4.png");
     }
+
     .swiper-pagination-bullet:nth-child(5) {
         background-image: url("../img/case-3.5.png");
     }
 }
+
 #inner-pagination-4 {
     .swiper-pagination-bullet:nth-child(1) {
         background-image: url("../img/case-4.1.png");
     }
+
     .swiper-pagination-bullet:nth-child(2) {
         background-image: url("../img/case-4.2.png");
     }
+
     .swiper-pagination-bullet:nth-child(3) {
         background-image: url("../img/case-4.3.png");
     }
+
     .swiper-pagination-bullet:nth-child(4) {
         background-image: url("../img/case-4.4.png");
     }
+
     .swiper-pagination-bullet:nth-child(5) {
         background-image: url("../img/case-4.5.png");
     }
 }
 
 @media (max-width: 767px) {
-    #portfolio, #reviewSlider {
+
+    #portfolio,
+    #reviewSlider {
         .bshadow {
             box-shadow: none;
         }
     }
 }
 
-//test
+@media (max-width: 350px) {
+    h1 {
+        font-size: 28px !important;
+    }
+
+    h2 {
+        font-size: 24px !important;
+    }
+}
+
+@media(max-width: 767px) {
+    #process, #review {
+        .swiper-button-prev {
+            top: auto!important;
+            bottom: -60px!important;
+            left: auto!important;
+            right: 50%!important;
+        }
+
+        .swiper-button-next {
+            top: auto!important;
+            bottom: -60px!important;
+            left: 50%!important;
+        }
+    }
+}
