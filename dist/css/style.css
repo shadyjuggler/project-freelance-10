@@ -719,6 +719,9 @@ select {
 .hidden {
   display: none;
 }
+.aspect-\[653\/414\] {
+  aspect-ratio: 653/414;
+}
 .h-1 {
   height: 0.25rem;
 }
